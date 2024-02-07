@@ -1,0 +1,160 @@
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #273c75;
+    color: #fff;
+    text-align: left;
+    padding: 50px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-image {
+    margin-right: 20px;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.header-text h2 {
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.5s ease;
+    transform: skew(-15deg); 
+}
+
+.red-text {
+    color: red; 
+}
+
+
+.main-content {
+    padding: 100px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-details {
+    flex: 0 0 45%;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #1a5276;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 45%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.bmw-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bmw-logo img {
+    width: 190px;
+	height: 150px
+}
+
+.myname {
+	text-align: right;
+}
+
+
+
+
+
+footer {
+    background-color: #273c75;
+    color: #fff;
+    text-align: right;
+    padding: 30px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .image-container {
+        flex: 0 0 100%;
+    }
+
+    .text-details {
+        flex: 0 0 100%;
+        margin-top: 50px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
